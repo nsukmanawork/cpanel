@@ -2,7 +2,7 @@
   <h1>User</h1>
 </div>
 
-<link rel="stylesheet" href="<?php echo base_url('node_modules/select2/dist/css/select2.min.css') ?>">
+<link rel="stylesheet" href="<?php echo base_url('node_modules/select2/dist/css/select2.css') ?>">
 <link rel="stylesheet" href="<?php echo base_url('node_modules/selectric/public/selectric.css') ?>">
 
 <div class="row">

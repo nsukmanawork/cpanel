@@ -4,8 +4,8 @@
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
   <h1 class="h3 mb-0 text-gray-800">Dashboard tarif</h1>
   <div class="">
-    <a href="<?php echo site_url('tarifs/form') ?>" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm"><i class="fas fa-user-plus fa-sm text-white-50"></i> Import Tarif</a>
-    <a href="<?php echo site_url('tarifs/add') ?>" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-user-plus fa-sm text-white-50"></i> Add Tarif</a>
+    <a href="<?php echo site_url('tarifs/form') ?>" class="btn btn-success shadow-sm"><i class="fas fa-user-plus fa-sm text-white-50"></i> Import Tarif</a>
+    <a href="<?php echo site_url('tarifs/add') ?>" class="btn btn-primary shadow-sm"><i class="fas fa-user-plus fa-sm text-white-50"></i> Add Tarif</a>
   </div>
 </div>
 

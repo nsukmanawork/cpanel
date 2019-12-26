@@ -19,6 +19,6 @@
 <script src="<?php echo base_url('node_modules/chocolat/dist/js/jquery.chocolat.min.js') ?>"></script>
 
 <!-- Page Specific JS File -->
-<script src="<?php echo base_url('js/page/index.js') ?>"></script>
+<!-- <script src="<?php echo base_url('js/page/index.js') ?>"></script> -->
 </body>
 </html>

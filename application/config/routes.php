@@ -55,5 +55,15 @@ $route['userprojects/add'] = 'userprojects/add';
 $route['userprojects/update/(:any)/(:any)'] = 'userprojects/update/$1/$2';
 //end service
 
+// service
+$route['tarifs'] = 'tarifs';
+$route['tarifs/detail/(:any)'] = 'tarifs/view/$1';
+$route['tarifs/add'] = 'tarifs/add';
+$route['tarifs/update/(:any)'] = 'tarifs/update/$1';
+$route['tarifs/form'] = 'tarifs/form';
+$route['tarifs/import'] = 'tarifs/import';
+$route['tarifs/downloadexcel'] = 'tarifs/downloadexcel';
+//end service
+
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

@@ -82,7 +82,7 @@ class Userprojects extends CI_Controller {
   		$this->load->view("templates/footer");
     }else {
       $this->userprojects_model->update_userprojects($id,$id2);
-      redirect('userprojects');
+      redirect('users/detail/'.$id);
     }
 
   }

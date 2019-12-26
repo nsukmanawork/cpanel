@@ -274,6 +274,7 @@
                   <li id="menu_negaras"><a class="nav-link" href="<?php echo site_url('negaras') ?>">Negara</a></li>
                   <li id="menu_stockreffs"><a class="nav-link" href="<?php echo site_url('stockreffs') ?>">Stock reff</a></li>
                   <li id="menu_cntmnts"><a class="nav-link" href="<?php echo site_url('cntmnts') ?>">Cntmnt</a></li>
+                  <li id="menu_tarifs"><a class="nav-link" href="<?php echo site_url('tarifs') ?>">Tarif</a></li>
                   <hr>
                   <li id="menu_userprojects"><a class="collapse-item" href="<?php echo site_url('userprojects') ?>">User projects</a></li>
                 </ul>

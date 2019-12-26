@@ -33,6 +33,41 @@
     </div>
   </div>
 </div>
+  <div class="card shadow mb-4">
+    <div class="card-header py-3">
+      <h6 class="m-0 font-weight-bold text-primary">User Project</h6>
+    </div>
+    <div class="card-body">
+    <div class="table-responsive">
+      <table class="table table-bordered" id="dataTable2" width="100%" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Cust project</th>
+            <th>Status user</th>
+            <th>Createdate</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php foreach ($userprojects as $userproject): ?>
+            <tr>
+              <td><?php echo $userproject['username'] ?></td>
+              <td><?php echo $userproject['custproject'] ?></td>
+              <td><?php echo $userproject['statususer'] ?></td>
+              <td><?php echo $userproject['createdate'] ?></td>
+              <td>
+                <a href="<?php echo site_url('userprojects/detail/'.$userproject['username'].'/'.$userproject['custproject']) ?>">Detail</a> |
+                <a href="<?php echo site_url('userprojects/update/'.$userproject['username'].'/'.$userproject['custproject']) ?>">Edit</a>
+              </td>
+            </tr>
+          <?php endforeach; ?>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
 
 <!-- nandar -->
 
@@ -43,4 +78,9 @@
 <script src="<?php echo base_url('js/demo/datatables-demo.js')?>"></script>
 <script type="text/javascript">
   $("#menu_users").addClass('active');
+</script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#dataTable2').DataTable();
+  });
 </script>

@@ -18,6 +18,12 @@ class Userprojects_model extends CI_Model
     return $query->row_array();
   }
 
+  public function get_userproject2($id = FALSE)
+  {
+    $query = $this->db->get_where('tbl_userproject', array('username' => $id));
+    return $query->result_array();
+  }
+
   public function set_userprojects()
   {
     $data = array(

@@ -23,6 +23,7 @@ class Users extends CI_Controller {
   public function view($id = null)
 	{
     $data['user_detail'] = $this->users_model->get_user($id);
+    $data['userprojects'] = $this->userprojects_model->get_userproject2($id);
 		$this->load->view("templates/header");
 		$this->load->view("master/user/detail", $data);
 		$this->load->view("templates/footer");

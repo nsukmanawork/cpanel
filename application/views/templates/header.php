@@ -30,6 +30,11 @@
   <!-- Template JS File -->
   <script src="<?php echo base_url('js/scripts.js') ?>"></script>
   <script src="<?php echo base_url('js/custom.js') ?>"></script>
+  <script src="<?php echo base_url('node_modules/jquery-sparkline/jquery.sparkline.min.js') ?>"></script>
+  <script src="<?php echo base_url('node_modules/chart.js/dist/Chart.min.js') ?>"></script>
+  <script src="<?php echo base_url('node_modules/owl.carousel/dist/owl.carousel.min.js') ?>"></script>
+  <script src="<?php echo base_url('node_modules/summernote/dist/summernote-bs4.js') ?>"></script>
+  <script src="<?php echo base_url('node_modules/chocolat/dist/js/jquery.chocolat.min.js') ?>"></script>
 </head>
 
 <body>
@@ -234,7 +239,7 @@
           </li>
           <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
             <img alt="image" src="<?php echo base_url('img/avatar/avatar-1.png') ?>" class="rounded-circle mr-1">
-            <div class="d-sm-none d-lg-inline-block">Hi, Ujang Maman</div></a>
+            <div class="d-sm-none d-lg-inline-block"><?php echo $this->session->userdata('name'); ?></div></a>
             <div class="dropdown-menu dropdown-menu-right">
               <div class="dropdown-title">Logged in 5 min ago</div>
               <a href="features-profile.html" class="dropdown-item has-icon">
@@ -247,7 +252,7 @@
                 <i class="fas fa-cog"></i> Settings
               </a>
               <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item has-icon text-danger">
+              <a href="<?php echo base_url('auth/logout') ?>" class="dropdown-item has-icon text-danger">
                 <i class="fas fa-sign-out-alt"></i> Logout
               </a>
             </div>

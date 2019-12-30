@@ -6,6 +6,9 @@ class Negaras extends CI_Controller {
   public function __construct()
   {
     parent::__construct();
+    if($this->session->userdata('authenticated') != 1){
+			redirect(base_url("auth"));
+		}
     $this->load->model('negaras_model');
     $this->load->helper('url_helper');
   }

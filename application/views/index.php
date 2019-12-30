@@ -474,5 +474,7 @@
         </div>
       </div>
     </div>
+
+    <script src="<?php echo base_url('js/page/index.js') ?>"></script>
   <!-- </section>
 </div> -->

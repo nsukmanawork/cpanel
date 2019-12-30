@@ -6,6 +6,9 @@ class Users extends CI_Controller {
   public function __construct()
   {
     parent::__construct();
+    if($this->session->userdata('authenticated') != 1){
+			redirect(base_url("auth"));
+		}
     $this->load->model('users_model');
     $this->load->model('projects_model');
     $this->load->model('userprojects_model');
